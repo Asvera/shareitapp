@@ -1,10 +1,14 @@
-## Usage
+## ShareIt
+- This simple app is made with aim to share anyfile form any computer to the dropbox cloud storage.
+- A shareable link and Qr code is also generate for the shared files.
+
+### Usage
 
 ```bash
 $ npm install # or pnpm install or yarn install
 ```
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+### Learn more on the [Solid Website](https://solidjs.com)
 
 ## Available Scripts
 
@@ -23,6 +27,6 @@ It correctly bundles Solid in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
-## Deployment
+### Deployment
+App is deployed on Cloudflare pages
 
-Learn more about deploying your application with the [documentations](https://vite.dev/guide/static-deploy.html)
