@@ -1,0 +1,23 @@
+{
+  "name": "shareit",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@solidjs/router": "^0.15.3",
+    "@tailwindcss/vite": "^4.0.17",
+    "axios": "^1.8.4",
+    "qrcode": "^1.5.4",
+    "solid-js": "^1.9.5",
+    "tailwindcss": "^4.0.17"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0",
+    "vite-plugin-solid": "^2.11.2"
+  }
+}
