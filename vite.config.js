@@ -7,4 +7,8 @@ export default defineConfig({
     tailwindcss(),
     solid()
   ],
+  base: "/share/", // Set to the repo name
+  build: {
+    outDir: "dist",
+  },
 })
