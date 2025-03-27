@@ -3,14 +3,14 @@ import { createSignal, createEffect } from "solid-js";
 import axios from "axios";
 import QRCode from "qrcode";
 
-const DROPBOX_ACCESS_TOKEN = import.meta.env.VITE_DROPBOX_ACCESS_TOKEN; // Use environment variable
-
 function Share() {
     const params = useParams();
     const fileId = decodeURIComponent(params.fileId);
     const [shareableLink, setShareableLink] = createSignal("");
     const [copied, setCopied] = createSignal(false);
     const [qrCode, setQrCode] = createSignal("");
+    const [token, setToken] = createSignal(localStorage.getItem("dropbox_access_token") || "");
+
 
     createEffect(async () => {
         try {
@@ -19,7 +19,7 @@ function Share() {
                 { path: fileId },
                 {
                     headers: {
-                        Authorization: `Bearer ${DROPBOX_ACCESS_TOKEN}`,
+                        Authorization: `Bearer ${token()}`,
                         "Content-Type": "application/json",
                     },
                 }
@@ -51,7 +51,7 @@ function Share() {
             try {
                 const qr = await QRCode.toDataURL(shareableLink());
                 setQrCode(qr);
-                console.log(shareableLink);
+                // console.log(shareableLink);
             } catch (error) {
                 console.error("QR Code generation failed:", error);
             }
