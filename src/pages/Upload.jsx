@@ -12,7 +12,7 @@ import axios from "axios";
 // Import from file
 import json_data from "../keys.json"
 
-const DROPBOX_REFRESH_TOKEN = json_data.VITE_DROPBOX_REFRESH_TOKEN; 
+const DROPBOX_REFRESH_TOKEN = json_data.VITE_DROPBOX_REFRESH_TOKEN;
 const DROPBOX_APP_KEY = json_data.VITE_DROPBOX_APP_KEY;
 const DROPBOX_SECRET_KEY = json_data.DROPBOX_SECRET_KEY;
 
@@ -145,6 +145,18 @@ function Upload() {
           {uploading() ? "Uploading..." : "Upload File"}
         </button>
       </div>
+
+
+      {/* Bottom-right image with text note */}
+      <div class="absolute bottom-4 right-4 w-80 flex flex-col items-center bg-white p-4 rounded shadow-lg pointer-events-none">
+        <img src="/yoroshiku-onegaishimasu-hero-600x338.png" alt="Info" class="w-36 h-36 object-cover rounded mb-2" />
+        <span class="text-sm text-gray-700 text-center">
+          Note: 私のプロジェクトをご覧いただき、ありがとうございます。お時間とご配慮に感謝いたします。
+            If you are recruiter or hiring manager, thank you for looking at my project. I appreciate your time and consideration.
+        </span>
+      </div>
+
+
     </div>
   );
 }
