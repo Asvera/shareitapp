@@ -1,4 +1,4 @@
-[! shareit logo](https://raw.githubusercontent.com/Asvera/shareitapp/refs/heads/master/public/share.webp?raw=true)
+[! shareit logo](public/share.webp)
 
 ## ShareIt
 - This simple app is made with aim to share anyfile form any computer to the dropbox cloud storage.
