@@ -1,4 +1,4 @@
-[! shareit logo](public/vite.svg)
+![shareit logo](public/share.webp)
 
 ## ShareIt
 - This simple app is made with aim to share anyfile form any computer to the dropbox cloud storage.
