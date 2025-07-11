@@ -148,13 +148,29 @@ function Upload() {
 
 
       {/* Bottom-right image with text note */}
-      <div class="absolute bottom-4 right-4 w-80 flex flex-col items-center bg-white p-4 rounded shadow-lg pointer-events-none">
-        <img src="/yoroshiku-onegaishimasu-hero-600x338.png" alt="Info" class="w-36 h-36 object-cover rounded mb-2" />
+      <div class="absolute bottom-4 right-4 w-80 flex flex-col items-center bg-white p-3 rounded shadow-lg pointer-events-none lg:p4">
+        <img src="/yoroshiku-onegaishimasu-hero-600x338.png" alt="Info" class="w-36 lg:h-36 object-cover rounded mb-2" />
         <span class="text-sm text-gray-700 text-center">
-          Note: 私のプロジェクトをご覧いただき、ありがとうございます。お時間とご配慮に感謝いたします。
-            If you are recruiter or hiring manager, thank you for looking at my project. I appreciate your time and consideration.
+          私のプロジェクトをご覧いただき、ありがとうございます。お時間とご配慮に感謝いたします。
+        </span>
+        <span class="text-sm text-gray-700 text-center">
+          If you are recruiter or hiring manager, thank you for looking at my project. I appreciate your time and consideration.
         </span>
       </div>
+
+      {/* 
+      <div class="fixed bottom-4 right-4 w-72 flex flex-col items-center bg-white p-3 rounded shadow-lg pointer-events-none lg:w-80 lg:p-4">
+        <img src="/yoroshiku-onegaishimasu-hero-600x338.png"
+          alt="Info"
+          class="w-20 h-20 object-cover rounded mb-2 lg:w-36 lg:h-36" />
+
+        <span class="text-xs text-gray-700 text-center lg:text-sm">
+          If you are a recruiter or hiring manager,
+        </span>
+        <span class="text-xs text-gray-700 text-center lg:text-sm">
+          Thank you for looking at my project. I appreciate your time and consideration.
+        </span>
+      </div> */}
 
 
     </div>
